@@ -1,10 +1,15 @@
 {
-	"name": "package-a",
+	"name": "@jayounglee92/package-a",
 	"version": "1.1.0",
 	"description": "> TODO: description",
 	"author": "jayounglee-nway <jayounglee-nway@users.noreply.github.com>",
 	"homepage": "",
 	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:jayounglee92/lerna-boilerplate.git",
+		"directory": "packages/package-a"
+	},
 	"main": "lib/package-a.js",
 	"directories": {
 		"lib": "lib",
