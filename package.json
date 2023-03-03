@@ -1,0 +1,18 @@
+{
+	"name": "repo",
+	"private": true,
+	"version": "independent",
+	"main": "index.js",
+	"license": "MIT",
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"bootstrap": "npx lerna bootstrap",
+		"publish:ci": "lerna publish from-package --yes",
+		"version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'"
+	},
+	"devDependencies": {
+		"lerna": "^6.4.1"
+	}
+}
