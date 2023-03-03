@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/jayounglee92/lerna-boilerplate/compare/@jayounglee92/package-b@1.1.2...@jayounglee92/package-b@1.1.3) (2023-03-03)
+
+
+### Bug Fixes
+
+* package b ([b718949](https://github.com/jayounglee92/lerna-boilerplate/commit/b718949eb43fc68cbe317222abc770c78c3018d4))
+
+
+
+
+
 ## 1.1.2 (2023-03-03)
 
 
