@@ -1,9 +1,13 @@
 {
-	"name": "repo",
+	"name": "lerna-boilerplate",
 	"private": true,
-	"version": "independent",
 	"main": "index.js",
 	"license": "MIT",
+	"author": "jayounglee92",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jayounglee92/lerna-boilerplate.git"
+	},
 	"workspaces": [
 		"packages/*"
 	],
