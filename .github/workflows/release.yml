@@ -17,14 +17,13 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
-          registry-url: "https://npm.pkg.github.com/"
+          node-version: "14"
+          registry-url: "https://npm.pkg.github.com"
 
       - name: Bootstrap lerna
         run: |
           yarn
           yarn bootstrap
-
       - name: Bump versions and publish packages
         run: |
           git config --global user.name "${{ github.actor }}"
