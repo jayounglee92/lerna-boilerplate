@@ -1,8 +1,6 @@
 {
 	"name": "lerna-boilerplate",
 	"private": true,
-	"main": "index.js",
-	"license": "MIT",
 	"author": "jayounglee92",
 	"repository": {
 		"type": "git",
@@ -11,12 +9,21 @@
 	"workspaces": [
 		"packages/*"
 	],
-	"scripts": {
-		"bootstrap": "npx lerna bootstrap",
-		"publish:ci": "lerna publish from-package --yes",
-		"version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'"
-	},
-	"devDependencies": {
-		"lerna": "^6.4.1"
-	}
+	  "scripts": {
+    "commit": "git-cz",
+    "bootstrap": "npx lerna bootstrap",
+    "publish:ci": "lerna publish from-package --yes",
+    "version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.1.0",
+    "lerna": "^4.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
+
